@@ -10,7 +10,7 @@ pipeline {
     stages {
         stage('Main') {
             steps {
-            		build job: "test1", parameters: {"FOO": "bar"}
+            		build job: "test1"
             		build "test2"
             }
         }
